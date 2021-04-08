@@ -178,7 +178,7 @@
         title: 'JavaScript > Auto Init',
         tags: 'auto init javascript js',
         body: 'Auto Init allows you to initialize all of the Materialize Components with a single function call. It is important to note that you cannot pass in options using this method.'
-      }{
+      }, {
         href: 'carousel.html',
         title: 'JavaScript > Carousel',
         tags: 'carousel javascript js',
@@ -253,11 +253,6 @@
         title: 'Mobile',
         tags: 'mobile',
         body: 'Mobile only interactive components.'
-      }, {
-        href: 'showcase.html',
-        title: 'Showcase',
-        tags: 'showcase',
-        body: 'Here is our showcase of websites that use materialize.'
       }
     ];
 
@@ -315,7 +310,7 @@
       var query = $(this).val();
       var results = window.index.search(query).slice(0, 6).map(function (result) {
         result = window.indexStore[result.ref];
-        return [result.title, "/" + result.href];
+        return [result.title, result.href];
       });
       renderResults(results);
     }));
